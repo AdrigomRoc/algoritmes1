@@ -39,13 +39,28 @@
                 }
             }
         }
+        function mult2($var1,$var2){
+            $res=0;
+            for($i=0;$i<$var2;$i++){
+                $res=$res+$var1;
+            }
+            return $res;
+        }
+        function factorial($var){
+            if($var==0||$var==1) return 1;
+            return factorial($var-1)*$var;
+        }
         //Suma
         echo "El resultat es ".suma(5,6)."<br>";
         //Mult
         print_r (mult(4,5)."<br>");
         //Array
         $nombres = array(6,8,12,8,4,5);
-        echo mesgran($nombres,5);
+        echo mesgran($nombres,5)."<br>";
+        //Mult2
+        echo mult2(5,3)."<br>";
+        //factorial
+        echo factorial(5);
     ?>
     
    
